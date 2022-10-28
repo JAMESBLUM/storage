@@ -1,0 +1,39 @@
+.formularios-agregar-actualizar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    align-items: center;
+}
+.form-agregar .campo input, .form-actualizar .campo input{
+    color: var(--darkGrey);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid 1px var(--darkGrey);
+}
+.form-agregar, .form-actualizar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+#btn-agregar,#btn-actualizar{
+    padding: 10px;
+    background-color: var(--blue);
+    border:solid 1px var(--blue);
+    color: var(--white);
+    grid-column: 1/3;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-out .2;
+}
+#btn-agregar:hover,#btn-actualizar:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    transition: ease-in .3s;
+}
+#btn-actualizar{
+    background-color: var(--yellow);
+    border:solid 1px var(--yellow);
+}

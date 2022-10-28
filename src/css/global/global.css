@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+/* ===== Variables ===== */
+:root{
+    --green: #3A9679;
+    --darkGreen: #377c66;
+    --blue: #293462;
+    --yellow: #FABC60;
+    --dark: #000000;
+    --white: #ffffff;
+    --red: #E16262;
+    --darkRed: #D61C4E;
+    --grey: #F7F7F7;
+    --darkGrey: #c4c4c4;
+    --fontTitle: 'Roboto', sans-serif;
+    --fontText: 'Montserrat', sans-serif;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+  font-family: var(--fontText);
+  background-color: var(--green);
+  height: 100vh;
+  display: flex;
+  gap: 122px;
+}
+a{text-decoration: none;}
+img{width: 100%;}
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--fontTitle);
+  margin: 0;
+}
+main{
+  width: 100%;
+  padding: 15px 122px 30px 0;
+}
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}

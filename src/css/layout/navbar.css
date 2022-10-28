@@ -1,0 +1,58 @@
+.navbar{
+    background-color: var(--white);
+    height: 100%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0 30px 10px;
+}
+.logo{
+    align-self: center;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+}
+.nav-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+.nav-principal a{
+    padding: 20px 20px;
+    border-radius: 10px 0 0 10px;
+    font-weight: 400;
+    width: 100%;
+    color: var(--black);
+    text-align: right;
+    transition: ease-out .3s;
+}
+.nav-principal a:hover{
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 600;
+    transition: ease-in .2s;
+}
+.settings-logout{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+}
+.settings-logout button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--grey);
+    transition: ease-out .3s;
+}
+.settings-logout button:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+    transition: ease-in .2s;
+}
