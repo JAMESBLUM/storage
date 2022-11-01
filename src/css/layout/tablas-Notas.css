@@ -25,7 +25,6 @@ thead{
     background-color: var(--white);
 }
 .tabla-products-cotenido tbody tr:nth-child(odd){background-color: var(--grey);}
-.tabla-products-cotenido tbody tr:last-child td{border-bottom: none;}
 /* NOTES */
 .notas{
     background-color: var(--white);

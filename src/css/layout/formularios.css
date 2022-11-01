@@ -4,11 +4,15 @@
     gap: 24px;
     align-items: center;
 }
-.form-agregar .campo input, .form-actualizar .campo input{
-    color: var(--darkGrey);
+.form-agregar .campo input, .form-actualizar .campo input, .form-agregar .campo select, .form-actualizar .campo select{
+    color: var(--dark);
     padding: 5px 10px;
     border-radius: 10px;
     border: solid 1px var(--darkGrey);
+}
+.form-agregar .campo select, .form-actualizar .campo select{
+    background-color: var(--white);
+    width: 90%;
 }
 .form-agregar, .form-actualizar{
     display: grid;
@@ -37,3 +41,17 @@
     background-color: var(--yellow);
     border:solid 1px var(--yellow);
 }
+#notifyAgr{
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.error p, .success p{
+    color: var(--white);
+    font-weight: 600;
+    margin: 0;
+}
+.error{background-color: var(--red);}
+.success{background-color: var(--darkGreen);}

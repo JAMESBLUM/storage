@@ -1,15 +1,15 @@
 .espacio{padding-top: 20px;}
 
 /* BUTTON DELETE & UPGRADE */
-#btn-delete, #btn-upgrade{
+.btn-delete, .btn-upgrade{
     background-color: transparent;
     cursor: pointer;
     border: none;
 }
-#btn-delete{color: var(--red);}
-#btn-upgrade{color: var(--green);}
-#btn-delete:hover{color: var(--darkRed);}
-#btn-upgrade:hover{color: var(--darkGreen);}
+.btn-delete{color: var(--red);}
+.btn-upgrade{color: var(--green);}
+.btn-delete:hover{color: var(--darkRed);}
+.btn-upgrade:hover{color: var(--darkGreen);}
 /* Estilos de la barra de scroll */
 ::-webkit-scrollbar{
     width: 10px;

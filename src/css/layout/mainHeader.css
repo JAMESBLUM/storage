@@ -1,7 +1,21 @@
 .mainHeader{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
+    justify-content: space-between;
     color: var(--white);
+    position: relative;
+}
+.mainHeader-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.mainHeader-icons a{
+    color: var(--white);
+    transition: ease-out .2s;
+}
+.mainHeader-icons a:hover{
+    color: var(--yellow);
+    transition: ease-in .3s;
 }

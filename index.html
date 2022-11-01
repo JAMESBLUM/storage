@@ -48,24 +48,43 @@
     </section>
     <main class="container">
         <header class="mainHeader">
-            <a href=""><span class="material-symbols-outlined">notifications</span></a>
-            <span class="material-symbols-outlined">Account_circle</span>
+            <div class="mainHeader-icons">
+                <a href="#"><span class="material-symbols-outlined">notifications</span></a>
+                <a href="#"><span class="material-symbols-outlined">Account_circle</span></a>
+            </div>
+            <div id="notifyAgr"></div>
         </header>
-        <div class="formularios-agregar-actualizar">
+        <div class="formularios-agregar-actualizar espacio">
             <form action="" class="form-agregar">
-                <div class="campo"><input type="text" placeholder="Nombre"></div>
-                <div class="campo"><input type="number" placeholder="Precio Lote"></div>
-                <div class="campo"><input type="number" placeholder="Precio Unitario"></div>
-                <div class="campo"><input type="text" placeholder="Categoria"></div>
-                <div class="campo"><input type="text" placeholder="Cantidad"></div>
+                <div class="campo"><input type="text" placeholder="Nombre" id="agr-nombre"></div>
+                <div class="campo"><input type="number" min="0" placeholder="Precio Lote" id="agr-precioLote"></div>
+                <div class="campo"><input type="number" min="0" placeholder="Precio Unitario" id="agr-precioUnitario"></div>
+                <div class="campo">
+                    <select name="categoria" id="agr-categoria">
+                        <option value="" selected disabled>== Selecciona una opcion ==</option>
+                        <option value="Sol">Sol</option>
+                        <option value="Sombra">Sombra</option>
+                        <option value="Interior">Interior</option>
+                        <option value="Resolana">Resolana</option>
+                    </select>
+                </div>
+                <div class="campo"><input type="number" min="0" placeholder="Cantidad" id="agr-cantidad"></div>
                 <input type="submit" value="Agregar" id="btn-agregar">
             </form>
             <form action="" class="form-actualizar">
                 <div class="campo"><input type="text" placeholder="Nombre"></div>
-                <div class="campo"><input type="number" placeholder="Precio Lote"></div>
-                <div class="campo"><input type="number" placeholder="Precio Unitario"></div>
-                <div class="campo"><input type="text" placeholder="Categoria"></div>
-                <div class="campo"><input type="text" placeholder="Cantidad"></div>
+                <div class="campo"><input type="number" min="0" placeholder="Precio Lote"></div>
+                <div class="campo"><input type="number" min="0" placeholder="Precio Unitario"></div>
+                <div class="campo">
+                    <select name="categoria" id="agr-categoria">
+                        <option selected disabled>== Selecciona una opcion ==</option>
+                        <option value="Sol">Sol</option>
+                        <option value="Sombra">Sombra</option>
+                        <option value="Interior">Interior</option>
+                        <option value="Resolana">Resolana</option>
+                    </select>
+                </div>
+                <div class="campo"><input type="number" min="0" placeholder="Cantidad"></div>
                 <input type="submit" value="Actualizar" id="btn-actualizar">
             </form>
         </div>
@@ -83,62 +102,7 @@
                             <td>Opciones</td>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Montera Deliciosa</td>
-                            <td>40</td>
-                            <td>$5,000</td>
-                            <td>$200</td>
-                            <td>Planta Interior</td>
-                            <td>
-                                <button id="btn-delete"><span class="material-symbols-outlined">delete</span></button>
-                                <button id="btn-upgrade"><span class="material-symbols-outlined">upgrade</span></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Montera Deliciosa</td>
-                            <td>40</td>
-                            <td>$5,000</td>
-                            <td>$200</td>
-                            <td>Planta Interior</td>
-                            <td>
-                                <button id="btn-delete"><span class="material-symbols-outlined">delete</span></button>
-                                <button id="btn-upgrade"><span class="material-symbols-outlined">upgrade</span></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Montera Deliciosa</td>
-                            <td>40</td>
-                            <td>$5,000</td>
-                            <td>$200</td>
-                            <td>Planta Interior</td>
-                            <td>
-                                <button id="btn-delete"><span class="material-symbols-outlined">delete</span></button>
-                                <button id="btn-upgrade"><span class="material-symbols-outlined">upgrade</span></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Montera Deliciosa</td>
-                            <td>40</td>
-                            <td>$5,000</td>
-                            <td>$200</td>
-                            <td>Planta Interior</td>
-                            <td>
-                                <button id="btn-delete"><span class="material-symbols-outlined">delete</span></button>
-                                <button id="btn-upgrade"><span class="material-symbols-outlined">upgrade</span></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Montera Deliciosa</td>
-                            <td>40</td>
-                            <td>$5,000</td>
-                            <td>$200</td>
-                            <td>Planta Interior</td>
-                            <td>
-                                <button id="btn-delete"><span class="material-symbols-outlined">delete</span></button>
-                                <button id="btn-upgrade"><span class="material-symbols-outlined">upgrade</span></button>
-                            </td>
-                        </tr>
+                    <tbody id="tabla-products-body">
                     </tbody>
                 </table>
             </div>
@@ -177,5 +141,6 @@
             </div>
         </div>
     </main>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
